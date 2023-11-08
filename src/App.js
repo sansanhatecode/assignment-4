@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import Todolist from './component/Todolist';
+import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
   return (
-    
-    <Todolist/>
+    <ThemeProvider>
+      <Todolist/>
+    </ThemeProvider>
   );
 }
 

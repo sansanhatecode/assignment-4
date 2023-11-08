@@ -65,10 +65,10 @@ export default function Todolist () {
     }
 
     return (
-      <ThemeProvider>
+      
         <div className={`flex flex-col pt-20 items-center  h-full min-h-screen pb-28 relative ${theme==='light' ? `bg-slate-100` : `bg-gray-900`}`}>
             <ChangeThemeButton/>
-            <h1 className={`text-8xl font-bold mb-5 ${theme==='light' ? `text-red-200` : `text-blue-900`}`}>Todo</h1>
+            <h1 className={`text-8xl font-bold mb-5 ${theme==='light' ? `text-red-200` : `text-blue-900`}`}>todos</h1>
             <div className={`border-2  rounded-sm mb-4 ${theme==='light' ? `border-red-200 bg-white` : `border-blue-400 bg-gray-700`}`}>
             <Header
               handleAdd={handleAdd}
@@ -81,6 +81,6 @@ export default function Todolist () {
             </div>
             
         </div>
-      </ThemeProvider>
+      
     )
 }
